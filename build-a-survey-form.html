@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Personal Style Survey</h1>
+    <p id="description">Please fill out this short form to help us learn more about your preferences.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" placeholder="Enter your age" min="10" max="99" required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">Choose your style:</label>
+      <select id="dropdown">
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>Preferred time to shop:</p>
+      <label><input type="radio" name="time" value="morning"> Morning</label>
+      <label><input type="radio" name="time" value="evening"> Evening</label>
+
+      <!-- Checkboxes -->
+      <p>Select your favorite colors:</p>
+      <label><input type="checkbox" name="color" value="red"> Red</label>
+      <label><input type="checkbox" name="color" value="blue"> Blue</label>
+
+      <!-- Textarea -->
+      <p>Additional Comments:</p>
+      <textarea placeholder="Write any comments here..."></textarea><br>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

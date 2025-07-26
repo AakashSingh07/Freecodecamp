@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Importance of Semantic HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Importance of Semantic HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="structure">
+        <h2>Structural Hierarchy</h2>
+        <p>Use <strong>heading elements</strong> from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> to define document structure.</p>
+      </section>
+
+      <section id="examples">
+        <h2>Examples of Semantic Elements</h2>
+
+        <article>
+          <h3>Text Emphasis</h3>
+          <p>Never give up on <em>your</em> dreams.</p>
+          <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+        </article>
+
+        <article>
+          <h3>Text Importance</h3>
+          <p><strong>Warning:</strong> This product may cause allergic reactions.</p>
+          <p>We tested several products, including the <b>SuperSound 3000</b>, <b>QuickCharge Pro</b>, and <b>Ecoclean Vacuum</b>.</p>
+        </article>
+
+        <article>
+          <h3>Description List</h3>
+          <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+          </dl>
+        </article>
+
+        <article>
+          <h3>Quotations</h3>
+          <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+            "Can you imagine what it would be like to be a successful developer?"
+          </blockquote>
+          <p>
+            - Quincy Larson, <cite>How to Learn to Code and Get a Developer Job</cite>
+          </p>
+          <p>As Quincy Larson said, 
+            <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is everything.</q>
+          </p>
+        </article>
+
+        <article>
+          <h3>Abbreviations & Time</h3>
+          <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
+          <p>The event starts at <time datetime="20:00">20:00</time>.</p>
+        </article>
+
+        <article>
+          <h3>Superscript & Subscript</h3>
+          <p>2<sup>2</sup> is 4.</p>
+          <p>CO<sub>2</sub> is carbon dioxide.</p>
+        </article>
+
+        <article>
+          <h3>Code & Preformatted Text</h3>
+          <pre><code>
+body {
+  color: red;
+}
+          </code></pre>
+        </article>
+
+        <article>
+          <h3>Unarticulated Annotation</h3>
+          <p>Check for <u>inccccort</u> <u>spling</u> <u>issses</u>.</p>
+        </article>
+
+        <article>
+          <h3>Ruby Annotation</h3>
+          <p>
+            <ruby>
+              明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+            </ruby>
+          </p>
+        </article>
+
+        <article>
+          <h3>Strikethrough Text</h3>
+          <p><s>Tomorrow's hike will be at noon.</s></p>
+          <p>Due to weather, the hike is canceled.</p>
+        </article>
+
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="Colosseo" width="300" />
+          <figcaption>Example of the <code>&lt;figure&gt;</code> element.</figcaption>
+        </figure>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <address>
+          Email us at <a href="mailto:info@example.com">info@example.com</a><br />
+          123 Web Street, Internet City
+        </address>
+      </section>
+    </main>
+  </body>
+</html>
