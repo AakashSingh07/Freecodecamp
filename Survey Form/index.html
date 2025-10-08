@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">We would love to hear your thoughts about our services. Please fill out this survey form.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" placeholder="Enter your age" min="10" max="100" required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="social-media">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="advertisement">Advertisement</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>How satisfied are you with our service?</p>
+      <label>
+        <input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied
+      </label>
+      <label>
+        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+      </label>
+      <label>
+        <input type="radio" name="satisfaction" value="neutral"> Neutral
+      </label>
+
+      <!-- Checkboxes -->
+      <p>Which of our services have you used? (Select all that apply)</p>
+      <label>
+        <input type="checkbox" name="services" value="delivery"> Delivery
+      </label>
+      <label>
+        <input type="checkbox" name="services" value="support"> Customer Support
+      </label>
+      <label>
+        <input type="checkbox" name="services" value="product"> Product Quality
+      </label>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" placeholder="Write your comments here..." rows="4"></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

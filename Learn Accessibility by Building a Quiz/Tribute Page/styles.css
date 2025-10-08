@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Main Container */
+#main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Title */
+#title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Image Styling */
+#img-div {
+  margin-bottom: 20px;
+}
+
+#image {
+  display: block;   /* important for FCC test */
+  max-width: 100%;  /* important for FCC test */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* Image Caption */
+#img-caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Tribute Info */
+#tribute-info {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #444;
+}
